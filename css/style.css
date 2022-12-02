@@ -48,10 +48,7 @@ body {
  font-weight: 500;
 }
 
-.collapse{
-  display: flex;
-  align-items: center;
-}
+
 
 /* Navbar style end  */
 
@@ -152,10 +149,6 @@ body {
 }
 .milestone-name{
   font-weight: 600;
-}
-
-.border-b {
-  border-bottom: 1px solid rgb(31, 41, 55);
 }
 
 .hidden_panel {

@@ -11,7 +11,9 @@
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
   <!--======================= Internal Css  ============================-->
-  <link rel="stylesheet" href="./css/style.css" 
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  
   
   <!--=======================Font Awesome============================-->
   <script src="https://kit.fontawesome.com/1950ee4dcd.js" crossorigin="anonymous"></script>
@@ -22,53 +24,56 @@
 
 <body >
   <!--============================== navbar area  =====================-->
+
   <nav style="background-color: rgb(97, 77, 223) ;" class="navbar navbar-expand-lg ">
     <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="./images/logo.png" alt="">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#">
+            <img src="./images/logo.png" alt="">
+          </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Support</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">My Clases</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio"><i class="fa-solid fa-bell"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#team"><i class="fa-solid fa-cart-plus"></i></a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#services">
-              <div class="circle">
-                <i style="color: rgb(7, 254, 250);" class="fa-solid fa-diamond"></i>
-                <p style="color: black; padding: 0; margin: 0;">89</p>
-              </div>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#contract">
-              <img style="width: 35px; height: 35px; border: 2px solid black; border-radius: 50%;" src="./images/ml.png"
-                alt="">
-            </a>
-          </li>
-
+            <li class="nav-item">
+              <a class="nav-link" href="#">Support</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">My Clases</a>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio"><i class="fa-solid fa-bell"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team"><i class="fa-solid fa-cart-plus"></i></a>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link center-nav" href="#services">
+                <nav class="circle">
+                  <i style="color: rgb(7, 254, 250);" class="fa-solid fa-diamond"></i>
+                  <p style="color: black; padding: 0; margin: 0;">89</p>
+                </nav>
+              </a>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link" href="#contract">
+                <img style="width: 35px; height: 35px; border: 2px solid black; border-radius: 50%;" src="./images/ml.png"
+                  alt="">
+              </a>
+            </li>
+            </ul>
+        
       </div>
     </div>
   </nav>
+
+
 
   <!-- main start -->
   <section class="body-header container">
@@ -105,11 +110,11 @@
           </span>
       </div>
 
-      <div class="milestones border border-2"">
+      <div class="milestones "">
 
         <div  class="milestone ">
           <div class="flex   ">
-            <div class="checkbox "><input type="checkbox" /></div>
+            <div class="checkbox "><input type="checkbox"  /></div>
             <div>
               <p class="milestone-name">
                 Milestone 1 name
@@ -121,7 +126,7 @@
           </div>
 
           <div class="hidden_panel">
-            <div class="module border-b">
+            <div class="module">
               <p>Module Name</p>
             </div>
           </div>
@@ -130,6 +135,8 @@
       </div>
       
       <div class="doneList">
+        <p class="done" style="font-size: 20px; color: rgb(38, 4, 117); font-weight: 600; "> <u>Done List</u>
+        </p>
 
         <!-- done list will load here -->
       </div>

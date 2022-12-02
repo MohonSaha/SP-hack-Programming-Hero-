@@ -5,9 +5,9 @@ function loadMilestones() {
     const milestones = document.querySelector('.milestones');
 
     milestones.innerHTML =` ${milestonesData.map(function(milestone){
-        return ` <div class="milestone border-b">
+        return ` <div class="milestone border-b" id="${milestone._id}">
         <div class="flex shadow border-1 border rounded p-2">
-          <div class="checkbox"><input type="checkbox" /></div>
+          <div class="checkbox"><input type="checkbox" onClick= "markMilestone(this, ${milestone._id})" /></div>
           <div onClick = "openMilestone(this, ${milestone._id})">
             <p>
               ${milestone.name}
@@ -72,5 +72,49 @@ milestoneImage.onload = function(){
   this.style.opacity = "1";
 }
 
+function markMilestone(checkbox, id){
+  const doneList = document.querySelector(".doneList");
+  const milestonesList = document.querySelector(".milestones");
+  const item = document.getElementById(id);
+  const done = document.querySelector(".done");
+ 
+console.log(id);
+ function queue(id){
+    const previous = id + 1;
+    return previous;
+  }
+
+//   console.log(id);
+//  function queue(id){
+//   const number = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+//   for (let num in number){
+//     const previous = id + 1;
+//   }
+//     const previous = id + 1;
+//     return previous;
+//   }
+  
+
+
+
+
+  const previousElement = queue(id);
+  const addHere = document.getElementById(previousElement);
+  console.log(addHere);
+
+  if(checkbox.checked){
+    // done
+    milestonesList.removeChild(item);
+    doneList.appendChild(item);
+  }
+  else{
+    // back to main list
+    doneList.removeChild(item);
+    // milestonesList.appendChild(item);
+    milestonesList.insertBefore(item, addHere)
+  }
+
+
+}
 
 loadMilestones();
