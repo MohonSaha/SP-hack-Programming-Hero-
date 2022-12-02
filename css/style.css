@@ -139,10 +139,10 @@ body {
 }
 .module {
   font-size: 16px;
-  color: var(--dark);
+  color: rgb(149, 147, 147);
   margin: 5px;
+  margin-left: 10px;
   padding: 5px;
-  /* margin-bottom: 10px; */
 }
 
 .milestoneDetails {
@@ -168,6 +168,7 @@ body {
 
 .active {
   font-weight: bold;
+  
 }
 
 .show {
@@ -186,7 +187,7 @@ input[type="checkbox"] {
 /* Footer style coded by Mf  */
 footer{
   background: #6f42c1;
-  padding: 85px 0;
+  padding: 60px 0;
 }
 
 .single-content{
