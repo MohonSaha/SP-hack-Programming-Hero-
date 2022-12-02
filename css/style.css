@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+:root {
+  --lightDark: #f9f9f9;
+  --dark: #141722;
+  --fontPrimary: #fff;
+  --green: #35bb78;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--fontPrimary);
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: var(--lightDark);
+}
+
+/* Navbar style start  */
+
+.navbar-nav a{
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  padding-right: 10px;
+}
+
+.circle{
+  background-color: rgb(255, 254, 254);
+  height: 33px;
+  width: 75px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* .fa-diamond{
+  fon
+} */
+
+
+.nav-link{
+ padding-right: 10px;
+ font-weight: 500;
+}
+
+.collapse{
+  display: flex;
+  align-items: center;
+}
+
+/* Navbar style end  */
+
+
+/* Body header coded by mf  */
+.body-header{
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.body-header h2 {
+  font-size: 1.1rem;
+  color: #141722;
+  font-weight: 600;
+  /* padding: 15px 30px ; */
+}
+
+
+
+
+/* Main body with grid start */
+.main {
+  display: grid;
+  grid-template-columns: 2.3fr 1fr;
+  grid-gap: 20px;
+  padding: 30px;
+}
+
+.flex {
+  display: flex;
+}
+
+.checkbox {
+  width: 40px;
+}
+
+.milestoneDetails img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 7px;
+  -webkit-transition: opacity 0.8s linear;
+  -moz-transition: opacity 0.8s linear;
+  transition: opacity 0.8s linear;
+}
+
+.title,
+.details {
+  margin: 10px auto;
+  padding: 5px 10px;
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.milestones,
+.doneList {
+  background-color: var(--dark);
+  border-radius: 7px;
+  cursor: pointer;
+  max-height: 495px;
+  overflow: auto;
+}
+
+.doneList {
+  margin-top: 20px;
+}
+
+.module {
+  background-color: var(--dark);
+}
+
+.milestone,
+.module {
+  font-size: 14px;
+  color: var(--white);
+  margin: 10px;
+  padding: 10px;
+}
+
+.milestoneDetails {
+  font-size: 14px;
+  color: var(--white);
+}
+
+.border-b {
+  border-bottom: 1px solid rgb(31, 41, 55);
+}
+
+.hidden_panel {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.8s;
+  -moz-transition: max-height 0.8s;
+  transition: max-height 0.8s;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.show {
+  max-height: 400px;
+}
+
+.loaded {
+  opacity: 1;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+/* Footer style coded by Mf  */
+footer{
+  background: #6f42c1;
+  padding: 85px 0;
+}
+
+.single-content{
+  padding: 115px 0;
+  text-align: center;
+}
+.single-box p{
+  color: white;
+  line-height: 1.9;
+}
+.single-box img{
+  padding-bottom: 15px;
+}
+
+
+.single-box h3{
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.single-box .card-area i{
+  color: white;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.single-box ul{
+  list-style: none;
+  padding: 0;
+}
+
+.single-box ul li a{
+  text-decoration: none;
+  color: white;
+  line-height: 2.5;
+  font-weight: 100;
+}
+
+.single-box h2{
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#basic-addon2{
+  background-color: red;
+  color: white;
+}
+.socials i{
+  font-size: 18px;
+  margin-right: 15px;
+  color: white;
+}
+
+.single-box p {
+  padding-bottom: 0;
+  margin-bottom: 3px;
+  font-weight: 600;
+}
+
+@media (max-width: 767px){
+  .single-box{
+      margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+  .single-box{
+      margin-bottom: 50px;
+  }
+}
+
+
+
+
+/* Footer style end  */
+
+@media only screen and (max-width: 1024px) {
+  .main,
+  .todo {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 15px;
+    grid-gap: 10px;
+  }
+
+  .nav img {
+    width: 150px;
+  }
+
+  .nav .avatar img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .milestones,
+  .doneList {
+    height: fit-content;
+  }
+}
