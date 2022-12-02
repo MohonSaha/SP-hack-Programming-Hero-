@@ -33,8 +33,26 @@ function loadMilestones() {
 
 function openMilestone(milestoneElement){
     const currentPanel = milestoneElement.parentNode.nextElementSibling;
+  const showPanel = document.querySelector(".show");
 
-    currentPanel.classList.toggle('show')
+  const active = document.querySelector(".active");
+  
+  // first remove previous active class except the clicked one
+if(active && !milestoneElement.classList.contains("active")){
+  active.classList.remove("active");
+}
+
+// toggle current clicked one 
+milestoneElement.classList.toggle("active");
+
+// first hide previous panel if open except the clicked one
+  if(!currentPanel.classList.contains("show") && showPanel)
+    showPanel.classList.remove("show");
+  
+    // toggle current element
+    currentPanel.classList.toggle('show');
+
+    showMilestone
 }
 
 loadMilestones();
